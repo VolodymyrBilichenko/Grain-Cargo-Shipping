@@ -153,5 +153,8 @@ select {
 }
 
 .banner{
-  
+  background: url(../img/banner-bgd.png) no-repeat;
+  height: 100vh;
+  background-size: calc(100% + 160px);
+  background-position: -45px 40px;
 }
