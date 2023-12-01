@@ -194,7 +194,7 @@ button {
   font-style: normal
 }
 :root {
-  --container: 1280px;
+  --container: 1280px
 }
 body {
   margin: 0;
