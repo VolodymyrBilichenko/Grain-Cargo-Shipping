@@ -194,7 +194,12 @@ button {
   font-style: normal
 }
 :root {
-  --container: 1280px
+  --container: 1280px;
+  --black: #363636;
+  --blue: #2980B9;
+  --blue-opacity: rgba(203, 234, 255, 0.88);
+  --white: #FFF;
+  --white-opacity: rgba(255, 255, 255, 0.88)
 }
 body {
   margin: 0;
@@ -270,4 +275,47 @@ textarea {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden
+}
+.header {
+  padding: 24px 0;
+  -webkit-box-shadow: 0 6px 34px 0 rgba(0,0,0,.1);
+  box-shadow: 0 6px 34px 0 rgba(0,0,0,.1);
+  background: var(--white);
+  width: 100%;
+  position: fixed;
+  top: 0
+}
+.header img {
+  max-width: 134px
+}
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+.header__menu svg {
+  fill: var(--black)
+}
+.header__languages__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.header__languages__head p {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black)
+}
+.header__languages__head svg {
+  fill: var(--black);
+  margin-left: 10px
 }

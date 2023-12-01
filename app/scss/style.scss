@@ -11,6 +11,12 @@
 
 :root {
   --container: 1280px;
+
+  --black: #363636;
+  --blue: #2980B9;
+  --blue-opacity: rgba(203, 234, 255, 0.88);
+  --white: #FFF;
+  --white-opacity: rgba(255, 255, 255, 0.88);
 }
 
 body {
@@ -101,3 +107,51 @@ select {
 }
 
 
+.header{
+  padding: 24px 0;
+  box-shadow: 0px 6px 34px 0px rgba(0, 0, 0, 0.10);
+  background: var(--white);
+  width: 100%;
+  position: fixed;
+  top: 0;
+
+  img{
+    max-width: 134px;
+  }
+
+  &__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__menu{
+    svg{
+      fill: var(--black);
+    }
+  }
+
+  &__languages{
+
+  }
+
+  &__languages__head{
+    display: flex;
+    align-items: center;
+
+    p{
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--black);
+    }
+
+    svg{
+      fill: var(--black);
+      margin-left: 10px;
+    }
+  }
+}
+
+.banner{
+  
+}
