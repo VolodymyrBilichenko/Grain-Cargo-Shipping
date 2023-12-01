@@ -299,6 +299,9 @@ textarea {
   -ms-flex-pack: justify;
   justify-content: space-between
 }
+.header__menu {
+  cursor: pointer
+}
 .header__menu svg {
   fill: var(--black)
 }
@@ -308,7 +311,8 @@ textarea {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center
+  align-items: center;
+  cursor: pointer
 }
 .header__languages__head p {
   font-size: 15px;

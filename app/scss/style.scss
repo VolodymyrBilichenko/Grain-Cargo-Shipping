@@ -126,6 +126,7 @@ select {
   }
 
   &__menu{
+    cursor: pointer;
     svg{
       fill: var(--black);
     }
@@ -138,6 +139,7 @@ select {
   &__languages__head{
     display: flex;
     align-items: center;
+    cursor: pointer;
 
     p{
       font-size: 15px;
