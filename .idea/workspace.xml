@@ -5,77 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12f65b34-37bd-4e6f-a6ab-fc27e14f9bf1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/city-catalog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/city-to-country.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/country-to-city.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/country-to-country.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/header.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/Clock.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/Logo_mobile.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/Telegram.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/Ukraine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/Viber.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/account_logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/arrival.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/arrow-down-f.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/arrow-down.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/arrow-lft.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/arrow-next.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/arrow-prev.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/arrow-rht.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/arrow-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/arrow-up.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/arrow_forward.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/arrows-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/bus-des.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/bus.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/bus.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/calendar-ds.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/calendar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/call_des.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/ch-roz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/ch-snow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/ch-wc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/ch-wifi.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/check-des.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/check.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/des-ph1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/dollar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/filter.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/footer-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/footer-phone.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/header_call.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/image-bus.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/location.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/lupa.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/option-cold.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/options_roz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/options_st.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/options_wifi.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/passagers-ds.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/passagers.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/payment-des-op.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/payment-des.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/payment.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/people.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/ph-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/ph-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/question.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/reviewer-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/support.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/swap.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/telegram-footer.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/verified.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/viber-footer.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/whatsapp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/in-city.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/in-country.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/terminals-and-stations.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +50,7 @@
       <workItem from="1700663159343" duration="960000" />
       <workItem from="1701077797749" duration="68303000" />
       <workItem from="1701254481735" duration="8112000" />
-      <workItem from="1701442478239" duration="381000" />
+      <workItem from="1701442478239" duration="738000" />
     </task>
     <servers />
   </component>
