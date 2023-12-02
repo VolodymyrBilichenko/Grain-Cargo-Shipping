@@ -189,9 +189,7 @@ button {
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: e-Ukraine;
-  font-weight: 400;
-  font-style: normal
+  font-family: Montserrat,sans-serif
 }
 :root {
   --container: 1280px;
@@ -283,7 +281,8 @@ textarea {
   background: var(--white);
   width: 100%;
   position: fixed;
-  top: 0
+  top: 0;
+  z-index: 10
 }
 .header img {
   max-width: 134px
@@ -327,5 +326,78 @@ textarea {
   background: url(../img/banner-bgd.png) no-repeat;
   height: 100vh;
   background-size: calc(100% + 160px);
-  background-position: -45px 40px
+  background-position: -45px 40px;
+  overflow: auto;
+  padding-bottom: 30px
+}
+.banner__inner {
+  padding-top: 730px;
+  position: relative
+}
+.banner__info__txt {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 6px 34px 0 rgba(0,0,0,.1);
+  box-shadow: 0 6px 34px 0 rgba(0,0,0,.1);
+  background: var(--blue-opacity);
+  padding: 20px 24px 35px;
+  margin-bottom: 20px
+}
+.banner__info__txt:last-child {
+  margin-bottom: 0
+}
+.banner__info__txt h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--blue);
+  margin-bottom: 15px
+}
+.banner__info__txt p {
+  font-size: 15px;
+  color: var(--black);
+  margin-bottom: 15px
+}
+.banner__info__txt p:last-child {
+  margin-bottom: 0
+}
+.banner__info__txt span {
+  color: var(--blue);
+  font-weight: 600
+}
+.footer {
+  padding: 30px 0 15px;
+  background: var(--white)
+}
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.footer__soc svg {
+  fill: var(--black);
+  margin-bottom: 30px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.footer__soc:hover svg {
+  fill: var(--blue)
+}
+.footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.footer__copyright img {
+  max-width: 10px;
+  margin-right: 4px
+}
+.footer__copyright p {
+  font-size: 10px;
+  color: var(--black)
 }
