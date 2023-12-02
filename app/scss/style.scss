@@ -126,19 +126,99 @@ select {
 
   &__menu{
     cursor: pointer;
+    position: relative;
+  }
+
+  &__menu__head{
     svg{
       fill: var(--black);
+      transition: all .3s ease;
+
+      &:hover{
+        fill: var(--blue);
+      }
+    }
+  }
+  &__menu__head_active{
+    svg{
+      fill: var(--blue);
+      transform: rotateY(180deg);
     }
   }
 
-  &__languages{
+  &__menu__body{
+    display: none;
+    background: var(--white);
+    padding: 24px 0 30px;
+    box-shadow: 0px 6px 34px 0px rgba(0, 0, 0, 0.10);
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 15;
 
+    img{
+      margin-bottom: 84px;
+    }
+
+    &_pages{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 84px;
+
+      li{
+        margin-bottom: 25px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+
+      a{
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--black);
+        transition: all 0.3s ease;
+
+        &:hover{
+          color: var(--blue);
+        }
+      }
+    }
+
+    .header__soc{
+      fill: var(--black);
+      transition: all .3s ease;
+      margin-bottom: 50px;
+
+      &:hover{
+        fill: var(--blue);
+      }
+    }
+    .header__close{
+      stroke: var(--black);
+      transition: all .3s ease;
+
+      &:hover{
+        stroke: var(--blue);
+        transform: rotateZ(180deg);
+      }
+    }
   }
+
 
   &__languages__head{
     display: flex;
     align-items: center;
     cursor: pointer;
+    transition: all .3s ease;
+    &:hover{
+      svg{
+        fill: var(--blue);
+      }
+    }
 
     p{
       font-size: 15px;
@@ -149,21 +229,40 @@ select {
     svg{
       fill: var(--black);
       margin-left: 10px;
+      transition: all .3s ease;
+    }
+  }
+  &__languages__head_active{
+    svg{
+      fill: var(--blue);
+      transform: rotateX(180deg);
+    }
+  }
+
+  &__languages__body{
+    display: none;
+    padding-top: 5px;
+    p{
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--black);
+      transition: all .3s ease;
+      &:hover{
+        color: var(--blue);
+      }
     }
   }
 }
 
 .banner{
   background: url(../img/banner-bgd.png) no-repeat;
-  height: 100vh;
   background-size: calc(100% + 160px);
   background-position: -45px 40px;
-  overflow: auto;
   padding-bottom: 30px;
+  background-attachment: fixed;
 
   &__inner{
     padding-top: 730px;
-    position: relative;
   }
 
   &__info__txt{
@@ -176,7 +275,7 @@ select {
       margin-bottom: 0;
     }
 
-    h2{
+    h1{
       font-size: 20px;
       font-weight: 600;
       color: var(--blue);
@@ -225,6 +324,7 @@ select {
   &__copyright{
     display: flex;
     align-items: center;
+    justify-content: center;
 
     img{
       max-width: 10px;

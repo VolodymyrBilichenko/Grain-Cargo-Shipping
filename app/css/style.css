@@ -299,10 +299,94 @@ textarea {
   justify-content: space-between
 }
 .header__menu {
-  cursor: pointer
+  cursor: pointer;
+  position: relative
 }
-.header__menu svg {
-  fill: var(--black)
+.header__menu__head svg {
+  fill: var(--black);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.header__menu__head svg:hover {
+  fill: var(--blue)
+}
+.header__menu__head_active svg {
+  fill: var(--blue);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg)
+}
+.header__menu__body {
+  display: none;
+  background: var(--white);
+  padding: 24px 0 30px;
+  -webkit-box-shadow: 0 6px 34px 0 rgba(0,0,0,.1);
+  box-shadow: 0 6px 34px 0 rgba(0,0,0,.1);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 15
+}
+.header__menu__body img {
+  margin-bottom: 84px
+}
+.header__menu__body_pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 84px
+}
+.header__menu__body_pages li {
+  margin-bottom: 25px
+}
+.header__menu__body_pages li:last-child {
+  margin-bottom: 0
+}
+.header__menu__body_pages a {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.header__menu__body_pages a:hover {
+  color: var(--blue)
+}
+.header__menu__body .header__soc {
+  fill: var(--black);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  margin-bottom: 50px
+}
+.header__menu__body .header__soc:hover {
+  fill: var(--blue)
+}
+.header__menu__body .header__close {
+  stroke: var(--black);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.header__menu__body .header__close:hover {
+  stroke: var(--blue);
+  -webkit-transform: rotateZ(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotateZ(180deg)
 }
 .header__languages__head {
   display: -webkit-box;
@@ -311,7 +395,13 @@ textarea {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.header__languages__head:hover svg {
+  fill: var(--blue)
 }
 .header__languages__head p {
   font-size: 15px;
@@ -320,19 +410,40 @@ textarea {
 }
 .header__languages__head svg {
   fill: var(--black);
-  margin-left: 10px
+  margin-left: 10px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.header__languages__head_active svg {
+  fill: var(--blue);
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg)
+}
+.header__languages__body {
+  display: none;
+  padding-top: 5px
+}
+.header__languages__body p {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.header__languages__body p:hover {
+  color: var(--blue)
 }
 .banner {
   background: url(../img/banner-bgd.png) no-repeat;
-  height: 100vh;
   background-size: calc(100% + 160px);
   background-position: -45px 40px;
-  overflow: auto;
-  padding-bottom: 30px
+  padding-bottom: 30px;
+  background-attachment: fixed
 }
 .banner__inner {
-  padding-top: 730px;
-  position: relative
+  padding-top: 730px
 }
 .banner__info__txt {
   border-radius: 10px;
@@ -345,7 +456,7 @@ textarea {
 .banner__info__txt:last-child {
   margin-bottom: 0
 }
-.banner__info__txt h2 {
+.banner__info__txt h1 {
   font-size: 20px;
   font-weight: 600;
   color: var(--blue);
@@ -391,7 +502,10 @@ textarea {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
 }
 .footer__copyright img {
   max-width: 10px;
