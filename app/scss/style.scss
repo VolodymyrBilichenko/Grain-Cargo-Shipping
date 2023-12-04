@@ -255,14 +255,25 @@ select {
 }
 
 .banner{
-  background: url(../img/banner-bgd.png) no-repeat;
-  background-size: calc(100% + 160px);
-  background-position: -45px 40px;
+  //background: url(../img/banner-bgd.png) no-repeat;
+  //background-size: calc(100% + 160px);
+  //background-position: -45px 40px;
   padding-bottom: 30px;
-  background-attachment: fixed;
+  //background-attachment: fixed;
 
   &__inner{
-    padding-top: 730px;
+    //padding-top: 730px;
+  }
+
+  &__bgd{
+    position: fixed;
+    z-index: -1;
+    left: -35px;
+    top: 57px;
+  }
+
+  &__info{
+    padding-top: 530px;
   }
 
   &__info__txt{

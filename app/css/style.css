@@ -436,14 +436,16 @@ textarea {
   color: var(--blue)
 }
 .banner {
-  background: url(../img/banner-bgd.png) no-repeat;
-  background-size: calc(100% + 160px);
-  background-position: -45px 40px;
-  padding-bottom: 30px;
-  background-attachment: fixed
+  padding-bottom: 30px
 }
-.banner__inner {
-  padding-top: 730px
+.banner__bgd {
+  position: fixed;
+  z-index: -1;
+  left: -35px;
+  top: 57px
+}
+.banner__info {
+  padding-top: 530px
 }
 .banner__info__txt {
   border-radius: 10px;
