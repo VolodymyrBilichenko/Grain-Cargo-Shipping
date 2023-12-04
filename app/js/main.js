@@ -17,3 +17,20 @@ headerMenuClose.addEventListener('click', () => {
 
 //languages
 
+const headerLanguages = document.querySelector(".header__languages");
+const headerLanguagesHead = headerLanguages.querySelector(".header__languages__head");
+const headerLanguagesBody = headerLanguages.querySelector(".header__languages__body");
+
+headerLanguagesHead.addEventListener("click", () => {
+  const isActive = headerLanguagesHead.classList.toggle("header__languages__head_active");
+    
+  if (isActive) {
+    headerLanguagesBody.classList.add("header__languages__body_active");
+  } else {
+    headerLanguagesBody.classList.remove("header__languages__body_active");
+  }
+});
+
+function changeCurrency(currency) {
+    document.getElementById('selectedCurrency').textContent = currency;
+}

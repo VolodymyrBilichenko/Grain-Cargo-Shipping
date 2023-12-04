@@ -412,6 +412,12 @@ textarea {
   max-height: 600px;
   visibility: visible
 }
+.header__languages {
+  position: relative;
+  padding: 5px 10px;
+  background: var(--white);
+  border-radius: 10px
+}
 .header__languages__head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -422,7 +428,8 @@ textarea {
   cursor: pointer;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
-  transition: all .3s ease
+  transition: all .3s ease;
+  overflow: hidden
 }
 .header__languages__head:hover svg {
   fill: var(--blue)
@@ -439,14 +446,24 @@ textarea {
   -o-transition: all .3s ease;
   transition: all .3s ease
 }
+.header__languages__head_active {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
 .header__languages__head_active svg {
   fill: var(--blue);
   -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg)
 }
 .header__languages__body {
-  display: none;
-  padding-top: 5px
+  opacity: 0;
+  max-height: 0;
+  visibility: hidden;
+  background: var(--white);
+  border-radius: 10px;
+  padding: 0 10px;
+  width: 100%
 }
 .header__languages__body p {
   font-size: 15px;
@@ -454,10 +471,23 @@ textarea {
   color: var(--black);
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
-  transition: all .3s ease
+  transition: all .3s ease;
+  cursor: pointer
 }
 .header__languages__body p:hover {
   color: var(--blue)
+}
+.header__languages__body_active {
+  opacity: 1;
+  visibility: visible;
+  max-height: 200px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 .header__links {
   display: none;
