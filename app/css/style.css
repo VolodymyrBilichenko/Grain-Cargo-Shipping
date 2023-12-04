@@ -285,7 +285,8 @@ textarea {
   z-index: 10
 }
 .header img {
-  max-width: 134px
+  max-width: 134px;
+  margin-left: 15px
 }
 .header__inner {
   display: -webkit-box;
@@ -299,8 +300,10 @@ textarea {
   justify-content: space-between
 }
 .header__menu {
-  cursor: pointer;
   position: relative
+}
+.header__menu__head {
+  cursor: pointer
 }
 .header__menu__head svg {
   fill: var(--black);
@@ -317,7 +320,15 @@ textarea {
   transform: rotateY(180deg)
 }
 .header__menu__body {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
   background: var(--white);
   padding: 24px 0 30px;
   -webkit-box-shadow: 0 6px 34px 0 rgba(0,0,0,.1);
@@ -333,10 +344,12 @@ textarea {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 15
+  z-index: 15;
+  visibility: hidden
 }
 .header__menu__body img {
-  margin-bottom: 84px
+  margin-bottom: 84px;
+  margin-left: 0
 }
 .header__menu__body_pages {
   display: -webkit-box;
@@ -366,12 +379,16 @@ textarea {
 .header__menu__body_pages a:hover {
   color: var(--blue)
 }
+.header__menu__body_pages .page__active {
+  color: var(--blue)
+}
 .header__menu__body .header__soc {
   fill: var(--black);
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
-  margin-bottom: 50px
+  margin-bottom: 50px;
+  cursor: pointer
 }
 .header__menu__body .header__soc:hover {
   fill: var(--blue)
@@ -380,13 +397,19 @@ textarea {
   stroke: var(--black);
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
-  transition: all .3s ease
+  transition: all .3s ease;
+  cursor: pointer
 }
 .header__menu__body .header__close:hover {
   stroke: var(--blue);
   -webkit-transform: rotateZ(180deg);
   -ms-transform: rotate(180deg);
   transform: rotateZ(180deg)
+}
+.header__menu__body_active {
+  opacity: 1;
+  max-height: 600px;
+  visibility: visible
 }
 .header__languages__head {
   display: -webkit-box;

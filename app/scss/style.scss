@@ -116,6 +116,7 @@ select {
 
   img{
     max-width: 134px;
+    margin-left: 15px;
   }
 
   &__inner{
@@ -125,11 +126,11 @@ select {
   }
 
   &__menu{
-    cursor: pointer;
     position: relative;
   }
 
   &__menu__head{
+    cursor: pointer;
     svg{
       fill: var(--black);
       transition: all .3s ease;
@@ -147,7 +148,11 @@ select {
   }
 
   &__menu__body{
-    display: none;
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .3s ease;
     background: var(--white);
     padding: 24px 0 30px;
     box-shadow: 0px 6px 34px 0px rgba(0, 0, 0, 0.10);
@@ -158,9 +163,11 @@ select {
     left: 0;
     width: 100%;
     z-index: 15;
+    visibility: hidden;
 
     img{
       margin-bottom: 84px;
+      margin-left: 0;
     }
 
     &_pages{
@@ -186,12 +193,16 @@ select {
           color: var(--blue);
         }
       }
+      .page__active{
+        color: var(--blue);
+      }
     }
 
     .header__soc{
       fill: var(--black);
       transition: all .3s ease;
       margin-bottom: 50px;
+      cursor: pointer;
 
       &:hover{
         fill: var(--blue);
@@ -200,6 +211,7 @@ select {
     .header__close{
       stroke: var(--black);
       transition: all .3s ease;
+      cursor: pointer;
 
       &:hover{
         stroke: var(--blue);
@@ -207,7 +219,11 @@ select {
       }
     }
   }
-
+  &__menu__body_active{
+    opacity: 1;
+    max-height: 600px;
+    visibility: visible;
+  }
 
   &__languages__head{
     display: flex;
@@ -252,19 +268,15 @@ select {
       }
     }
   }
+
+  @media screen and (min-width: 768px) {
+    
+  }
 }
 
 .banner{
-  //background: url(../img/banner-bgd.png) no-repeat;
-  //background-size: calc(100% + 160px);
-  //background-position: -45px 40px;
   padding-bottom: 30px;
-  //background-attachment: fixed;
   overflow: hidden;
-
-  &__inner{
-    //padding-top: 730px;
-  }
 
   &__bgd{
     position: fixed;
