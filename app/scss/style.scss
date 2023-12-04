@@ -15,6 +15,7 @@
   --blue-opacity: rgba(203, 234, 255, 0.88);
   --white: #FFF;
   --white-opacity: rgba(255, 255, 255, 0.88);
+  --border: #E0E0E0;
 }
 
 body {
@@ -269,8 +270,52 @@ select {
     }
   }
 
+  &__links{
+    display: none;
+    justify-content: center;
+    gap: 76px;
+
+    a{
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--black);
+      transition: all .3s ease;
+
+      &:hover{
+        color: var(--blue);
+      }
+    }
+    .page__active{
+      color: var(--blue);
+    }
+  }
+
   @media screen and (min-width: 768px) {
-    
+    &{
+      img{
+        max-width: 170px;
+      }
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &__inner{
+      justify-content: start;
+      padding-bottom: 15px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 11px;
+    }
+    &__menu{
+      display: none;
+    }
+    &__logo{
+      margin: 0 auto;
+      img{
+        margin-left: 0;
+      }
+    }
+    &__links{
+      display: flex;
+    }
   }
 }
 
@@ -326,6 +371,56 @@ select {
       font-weight: 600;
     }
   }
+
+  @media screen and (min-width: 768px) {
+    &__info__txt{
+      padding: 20px 40px 35px;
+      h1{
+        font-size: 24px;
+      }
+
+      p{
+        font-size: 16px;
+      }
+    }
+
+    &__bgd{
+      img{
+        width: calc(100% - 230px);
+      }
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &{
+      padding-top: 260px;
+      padding-bottom: 200px;
+    }
+
+    &__inner{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+    }
+
+    &__bgd{
+      left: 0;
+      top: auto;
+      bottom: -200px;
+
+      img{
+        width: 100%;
+        max-width: 588px;
+      }
+    }
+
+    &__info{
+      padding-top: 0;
+      width: 100%;
+      max-width: 691px;
+      margin-left: auto;
+    }
+  }
 }
 
 .footer{
@@ -337,12 +432,14 @@ select {
   &__inner{
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
 
   &__soc{
+    margin-bottom: 30px;
     svg{
       fill: var(--black);
-      margin-bottom: 30px;
       transition: all .3s ease;
     }
 
@@ -366,6 +463,54 @@ select {
     p{
       font-size: 10px;
       color: var(--black);
+    }
+  }
+
+  &__logo{
+    max-width: 170px;
+    display: none;
+  }
+
+  &__links{
+    display: none;
+    gap: 76px;
+
+    a{
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--black);
+      transition: all .3s ease;
+
+      &:hover{
+        color: var(--blue);
+      }
+    }
+    .page__active{
+      color: var(--blue);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &{
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      padding: 20px 0 15px;
+    }
+
+    &__inner{
+      justify-content: space-between;
+    }
+
+    &__soc{
+      margin-bottom: 0;
+    }
+
+    &__logo{
+      display: block;
+    }
+    &__links{
+      display: flex;
     }
   }
 }
