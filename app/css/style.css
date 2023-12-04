@@ -545,6 +545,38 @@ textarea {
 .banner__info_page {
   padding-top: 210px
 }
+.banner__info__locate li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 18px
+}
+.banner__info__locate li p {
+  margin-bottom: 0
+}
+.banner__info__locate img {
+  max-width: 24px;
+  margin-right: 12px
+}
+.banner__info__locate a {
+  font-size: 15px;
+  color: var(--black);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.banner__info__locate a:hover {
+  color: var(--blue)
+}
+.banner__info__locate_con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
 .banner__info__txt {
   border-radius: 10px;
   -webkit-box-shadow: 0 6px 34px 0 rgba(0,0,0,.1);
@@ -555,6 +587,17 @@ textarea {
 }
 .banner__info__txt:last-child {
   margin-bottom: 0
+}
+.banner__info__txt_map {
+  padding: 0
+}
+.banner__info__txt_map iframe {
+  width: 100%;
+  height: 261px;
+  border-radius: 10px
+}
+.banner__info__txt .contacts_h {
+  margin-left: 36px
 }
 .banner__info__txt h1 {
   font-size: 20px;
@@ -639,6 +682,12 @@ textarea {
   }
   .banner__info__txt_video {
     padding: 38px 40px
+  }
+  .banner__info__txt_map {
+    padding: 0
+  }
+  .banner__info__txt_map iframe {
+    height: 380px
   }
 }
 @media screen and (min-width:1280px) {

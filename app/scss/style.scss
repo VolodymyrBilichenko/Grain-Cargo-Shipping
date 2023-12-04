@@ -323,12 +323,6 @@ select {
   padding-bottom: 30px;
   overflow: hidden;
 
-  // &__page{
-  //   background: url(../img/banner-bgd-ocean.jpg) no-repeat;
-  //   background-size: contain;
-  //   object-fit: contain;
-  // }
-
   &__bgd{
     position: fixed;
     z-index: 1;
@@ -364,6 +358,33 @@ select {
     padding-top: 210px;
   }
 
+  &__info__locate{
+    li{
+      display: flex;
+      margin-bottom: 18px;
+      p{
+        margin-bottom: 0;
+      }
+    }
+    img{
+      max-width: 24px;
+      margin-right: 12px;
+    }
+    a{
+      font-size: 15px;
+      color: var(--black);
+      transition: all .3s ease;
+
+      &:hover{
+        color: var(--blue);
+      }
+    }
+    &_con{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   &__info__txt{
     border-radius: 10px;
     box-shadow: 0px 6px 34px 0px rgba(0, 0, 0, 0.10);
@@ -372,6 +393,18 @@ select {
     margin-bottom: 20px;
     &:last-child{
       margin-bottom: 0;
+    }
+
+    &_map{
+      padding: 0;
+      iframe{
+        width: 100%;
+        height: 261px;
+        border-radius: 10px;
+      }
+    }
+    .contacts_h{
+      margin-left: 36px;
     }
 
     h1{
@@ -450,6 +483,12 @@ select {
       }
       &_video{
         padding: 38px 40px;
+      }
+      &_map{
+        padding: 0;
+        iframe{
+          height: 380px;
+        }
       }
     }
   }
