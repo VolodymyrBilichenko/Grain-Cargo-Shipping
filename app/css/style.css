@@ -522,10 +522,28 @@ textarea {
 .banner__bgd img {
   width: calc(100% + 120px)
 }
+.banner__bgd_none {
+  display: none
+}
+.banner__bgd_page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1
+}
+.banner__bgd_page img {
+  -o-object-fit: cover;
+  object-fit: cover
+}
 .banner__info {
   padding-top: 530px;
   position: relative;
   z-index: 5
+}
+.banner__info_page {
+  padding-top: 210px
 }
 .banner__info__txt {
   border-radius: 10px;
@@ -544,6 +562,12 @@ textarea {
   color: var(--blue);
   margin-bottom: 15px
 }
+.banner__info__txt h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--blue);
+  margin-bottom: 15px
+}
 .banner__info__txt p {
   font-size: 15px;
   color: var(--black);
@@ -552,9 +576,17 @@ textarea {
 .banner__info__txt p:last-child {
   margin-bottom: 0
 }
+.banner__info__txt .info__txt_black {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black)
+}
 .banner__info__txt span {
   color: var(--blue);
   font-weight: 600
+}
+.banner__info__txt_white {
+  background: var(--white-opacity)
 }
 @media screen and (min-width:768px) {
   .banner__info__txt {
@@ -565,9 +597,6 @@ textarea {
   }
   .banner__info__txt p {
     font-size: 16px
-  }
-  .banner__bgd img {
-    width: calc(100% - 230px)
   }
 }
 @media screen and (min-width:1280px) {
@@ -586,9 +615,12 @@ textarea {
     width: 100%
   }
   .banner__bgd {
-    left: 0;
+    left: auto;
     top: auto;
-    bottom: -200px
+    bottom: 0;
+    -o-object-fit: contain;
+    object-fit: contain;
+    height: calc(100vh - 100px)
   }
   .banner__bgd img {
     width: 100%;

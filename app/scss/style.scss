@@ -323,6 +323,12 @@ select {
   padding-bottom: 30px;
   overflow: hidden;
 
+  // &__page{
+  //   background: url(../img/banner-bgd-ocean.jpg) no-repeat;
+  //   background-size: contain;
+  //   object-fit: contain;
+  // }
+
   &__bgd{
     position: fixed;
     z-index: 1;
@@ -333,11 +339,29 @@ select {
       width: calc(100% + 120px);
     }
   }
+  &__bgd_none{
+    display: none;
+  }
+  &__bgd_page{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    img{
+      object-fit: cover;
+    }
+  }
+
 
   &__info{
     padding-top: 530px;
     position: relative;
     z-index: 5;
+  }
+  &__info_page{
+    padding-top: 210px;
   }
 
   &__info__txt{
@@ -356,6 +380,12 @@ select {
       color: var(--blue);
       margin-bottom: 15px;
     }
+    h2{
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--blue);
+      margin-bottom: 15px;
+    }
 
     p{
       font-size: 15px;
@@ -366,10 +396,18 @@ select {
         margin-bottom: 0;
       }
     }
+    .info__txt_black{
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--black);
+    }
     span{
       color: var(--blue);
       font-weight: 600;
     }
+  }
+  &__info__txt_white{
+    background: var(--white-opacity);
   }
 
   @media screen and (min-width: 768px) {
@@ -386,7 +424,7 @@ select {
 
     &__bgd{
       img{
-        width: calc(100% - 230px);
+        // width: calc(100% - 230px);
       }
     }
   }
@@ -404,9 +442,11 @@ select {
     }
 
     &__bgd{
-      left: 0;
+      left: auto;
       top: auto;
-      bottom: -200px;
+      bottom: 0px;
+      object-fit: contain;
+      height: calc(100vh - 100px);
 
       img{
         width: 100%;
