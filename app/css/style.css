@@ -618,6 +618,54 @@ textarea {
   -ms-flex-direction: column;
   flex-direction: column
 }
+.banner .info__txt_inner_video {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  -webkit-transition: all .8s ease;
+  -o-transition: all .8s ease;
+  transition: all .8s ease
+}
+.banner .info__txt_inner_video:hover .button-hover {
+  opacity: 1
+}
+.banner .info__txt_inner_video .video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 47px;
+  height: 47px;
+  z-index: 7
+}
+.banner .info__txt_inner_video .video__btn {
+  width: 47px;
+  height: 47px;
+  position: relative;
+  z-index: 5
+}
+.banner .info__txt_inner_video .button-hover {
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 89px;
+  height: 89px;
+  z-index: 2
+}
 .banner__info__txt {
   border-radius: 10px;
   -webkit-box-shadow: 0 6px 34px 0 rgba(0,0,0,.1);
@@ -689,6 +737,9 @@ textarea {
   max-width: 345px;
   height: 242px;
   border-radius: 10px
+}
+.banner__info__txt_inner .youtube-player::-webkit-media-controls-start-playback-button {
+  display: none!important
 }
 .banner__info__txt_inner h3 {
   margin-top: 20px;

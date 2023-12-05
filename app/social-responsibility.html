@@ -13,7 +13,7 @@
     <!--    <link rel="stylesheet" href="./fonts/stylesheet.css">-->
     <link rel="stylesheet" href="css/style.css">
     <!-- Fav-icon -->
-    <link rel="icon" type="image/png" href="./img/fav.svg">
+    <link rel="icon" type="image/png" href="./img/fav.ico">
 </head>
 
 <body>
@@ -141,13 +141,24 @@
                     </div>
                     <div class="banner__info__txt banner__info__txt_video banner__info__txt_white">
                         <div class="banner__info__txt_inner">
-                            <iframe 
-                                src="https://www.youtube.com/embed/MjLP2VTa9kU?si=nMAxAp0e6L_MlAsu" 
-                                title="YouTube video player" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                allowfullscreen>
-                            </iframe>
+                            <div class="info__txt_inner_video">
+                                <iframe 
+                                    id="ytPlayer"
+                                    src="https://www.youtube.com/embed/MjLP2VTa9kU?si=nMAxAp0e6L_MlAsu" 
+                                    title="YouTube video player" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowfullscreen
+                                    controls="0"
+                                    class="youtube-player">
+                                </iframe>
+                                <div class="video__button">
+                                    <button id="playBtn" class="video__btn" >
+                                        <img src="img/button.png" alt="icon">
+                                    </button>
+                                    <img class="button-hover" src="img/button-hover.png" alt="icon">
+                                </div>
+                            </div>
                             <h3>
                                 Верес презентував команду і проекти на новий сезон
                             </h3>
@@ -211,6 +222,8 @@
 </footer>
 
 
+
+<script src="https://www.youtube.com/iframe_api"></script>
 <!-- swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <!-- main JS -->

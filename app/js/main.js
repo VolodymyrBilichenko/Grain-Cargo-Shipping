@@ -34,3 +34,22 @@ headerLanguagesHead.addEventListener("click", () => {
 function changeCurrency(currency) {
     document.getElementById('selectedCurrency').textContent = currency;
 }
+
+//// video btn
+
+document.addEventListener('DOMContentLoaded', function() {
+  const playBtn = document.getElementById('playBtn');
+  if (playBtn !== null) {
+      playBtn.addEventListener('click', function () {
+          const player = document.getElementById('ytPlayer');
+          const playerHover = document.querySelector('.button-hover')
+          if (player !== null) {
+              player.src += '&autoplay=1';
+              this.style.display = 'none';
+              this.style.visibility = 'hidden';
+              playerHover.style.display = 'none';
+              playerHover.style.visibility = 'hidden';
+          }
+      });
+  }
+});
