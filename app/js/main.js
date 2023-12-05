@@ -58,13 +58,16 @@ function onPlayerReady(event) {
 
 const playTheVideo = () => {
     // @ts-ignore
+    const playButtonAl = document.querySelector(".youtube .video__button");
     const playButton = document.querySelector(".youtube .play");
     const buttonHover = document.querySelector(".youtube .button-hover");
     const videoIframe = document.querySelector('.youtube iframe');
 
     if (playButton && buttonHover && videoIframe) {
-        playButton.style.display = 'none';
-        buttonHover.style.display = 'none';
+        playButton.remove();
+        buttonHover.remove();
+        playButtonAl.remove();
+        console.log('123',playButtonAl);
         // @ts-ignore
         document.querySelector(".youtube img").remove();
 
