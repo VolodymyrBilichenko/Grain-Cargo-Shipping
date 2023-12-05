@@ -37,19 +37,39 @@ function changeCurrency(currency) {
 
 //// video btn
 
-document.addEventListener('DOMContentLoaded', function() {
-  const playBtn = document.getElementById('playBtn');
-  if (playBtn !== null) {
-      playBtn.addEventListener('click', function () {
-          const player = document.getElementById('ytPlayer');
-          const playerHover = document.querySelector('.button-hover')
-          if (player !== null) {
-              player.src += '&autoplay=1';
-              this.style.display = 'none';
-              this.style.visibility = 'hidden';
-              playerHover.style.display = 'none';
-              playerHover.style.visibility = 'hidden';
-          }
-      });
-  }
-});
+var player;
+    const toggle = document.getElementById('toggle')
+
+    function onYouTubePlayerAPIReady() {
+        // @ts-ignore
+        player = new YT.Player('player', {
+            height: '242',
+            width: '345',
+            videoId: 'MjLP2VTa9kU'
+        });
+    };
+    const playTheVideo = () => {
+
+        // @ts-ignore
+        if (player) {
+            player.playVideo()
+        }
+
+
+        console.log('123')
+        // @ts-ignore
+        document.querySelector(".youtube img").remove()
+        // @ts-ignore
+        document.querySelector(".youtube .play").remove()
+
+        let videoIframe = document.querySelector('.youtube iframe');
+
+        // @ts-ignore
+        videoIframe.setAttribute("src", "https://www.youtube.com/embed/MjLP2VTa9kU?si=6ScvJ3nQ_3Ifp0nv?autoplay=1&feature=oembed&autoplay=1")
+
+        // @ts-ignore
+        if (videoIframe && videoIframe.contentWindow && videoIframe.contentWindow.postMessage) {
+            // @ts-ignore
+            videoIframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+        }
+    }

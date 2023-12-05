@@ -457,7 +457,7 @@ select {
       transform: translate(-50%, -50%);
       width: 89px;
       height: 89px;
-      z-index: 2;
+      z-index: 4;
 
     }
   }
@@ -529,10 +529,16 @@ select {
       max-width: 345px;
       height: 242px;
       border-radius: 10px;
-      
     }
-    .youtube-player::-webkit-media-controls-start-playback-button {
-      display: none !important;
+
+    .preview__video{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      max-width: 345px;
+      border-radius: 10px;
+      cursor: pointer;
     }
     
     h3{

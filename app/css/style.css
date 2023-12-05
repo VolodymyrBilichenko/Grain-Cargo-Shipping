@@ -664,7 +664,7 @@ textarea {
   transform: translate(-50%,-50%);
   width: 89px;
   height: 89px;
-  z-index: 2
+  z-index: 4
 }
 .banner__info__txt {
   border-radius: 10px;
@@ -738,8 +738,14 @@ textarea {
   height: 242px;
   border-radius: 10px
 }
-.banner__info__txt_inner .youtube-player::-webkit-media-controls-start-playback-button {
-  display: none!important
+.banner__info__txt_inner .preview__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 345px;
+  border-radius: 10px;
+  cursor: pointer
 }
 .banner__info__txt_inner h3 {
   margin-top: 20px;
