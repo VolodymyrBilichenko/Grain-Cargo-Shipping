@@ -37,39 +37,40 @@ function changeCurrency(currency) {
 
 //// video btn
 
-var player;
-    const toggle = document.getElementById('toggle')
 
-    function onYouTubePlayerAPIReady() {
-        // @ts-ignore
-        player = new YT.Player('player', {
-            height: '242',
-            width: '345',
-            videoId: 'MjLP2VTa9kU'
-        });
-    };
-    const playTheVideo = () => {
+let player;
+const toggle = document.getElementById('toggle');
 
-        // @ts-ignore
-        if (player) {
-            player.playVideo()
+function onYouTubePlayerAPIReady() {
+    // @ts-ignore
+    player = new YT.Player('player', {
+        height: '242',
+        width: '345',
+        videoId: 'MjLP2VTa9kU',
+        events: {
+            'onReady': onPlayerReady
         }
+    });
+}
 
+function onPlayerReady(event) {
+    event.target.playVideo();
+}
 
-        console.log('123')
+const playTheVideo = () => {
+    // @ts-ignore
+    document.querySelector(".youtube img").remove();
+    // @ts-ignore
+    document.querySelector(".youtube .play").remove();
+
+    let videoIframe = document.querySelector('.youtube iframe');
+
+    // @ts-ignore
+    videoIframe.setAttribute("src", "https://www.youtube.com/embed/MjLP2VTa9kU?si=6ScvJ3nQ_3Ifp0nv?autoplay=1&feature=oembed&autoplay=1");
+
+    // @ts-ignore
+    if (videoIframe && videoIframe.contentWindow && videoIframe.contentWindow.postMessage) {
         // @ts-ignore
-        document.querySelector(".youtube img").remove()
-        // @ts-ignore
-        document.querySelector(".youtube .play").remove()
-
-        let videoIframe = document.querySelector('.youtube iframe');
-
-        // @ts-ignore
-        videoIframe.setAttribute("src", "https://www.youtube.com/embed/MjLP2VTa9kU?si=6ScvJ3nQ_3Ifp0nv?autoplay=1&feature=oembed&autoplay=1")
-
-        // @ts-ignore
-        if (videoIframe && videoIframe.contentWindow && videoIframe.contentWindow.postMessage) {
-            // @ts-ignore
-            videoIframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-        }
+        videoIframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
     }
+}
