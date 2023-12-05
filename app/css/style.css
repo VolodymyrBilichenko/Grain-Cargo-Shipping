@@ -413,10 +413,7 @@ textarea {
   visibility: visible
 }
 .header__languages {
-  position: relative;
-  padding: 5px 10px;
-  background: var(--white);
-  border-radius: 10px
+  position: relative
 }
 .header__languages__head {
   display: -webkit-box;
@@ -429,7 +426,10 @@ textarea {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
-  overflow: hidden
+  overflow: hidden;
+  padding: 5px 10px;
+  background: var(--white);
+  border-radius: 10px
 }
 .header__languages__head:hover svg {
   fill: var(--blue)
@@ -477,6 +477,12 @@ textarea {
 .header__languages__body p:hover {
   color: var(--blue)
 }
+.header__languages__body a {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+  display: block
+}
 .header__languages__body_active {
   opacity: 1;
   visibility: visible;
@@ -484,7 +490,7 @@ textarea {
   padding: 5px 10px;
   position: absolute;
   top: 25px;
-  left: 0;
+  right: 0;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease
