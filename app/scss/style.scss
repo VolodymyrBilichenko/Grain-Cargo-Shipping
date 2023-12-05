@@ -321,7 +321,7 @@ select {
       }
     }
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 992px) {
     &__inner{
       justify-content: start;
       padding-bottom: 15px;
@@ -355,6 +355,11 @@ select {
 
     img{
       width: calc(100% + 120px);
+    }
+    @media screen and (min-width: 575px) {
+      img{
+        max-width: 500px;
+      }
     }
   }
   &__bgd_none{
@@ -516,7 +521,7 @@ select {
       }
     }
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 992px) {
     &{
       padding-top: 260px;
       padding-bottom: 200px;
@@ -618,7 +623,7 @@ select {
     }
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 992px) {
     &{
       position: fixed;
       bottom: 0;

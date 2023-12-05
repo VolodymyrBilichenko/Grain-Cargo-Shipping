@@ -515,7 +515,7 @@ textarea {
     max-width: 170px
   }
 }
-@media screen and (min-width:1280px) {
+@media screen and (min-width:992px) {
   .header__inner {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
@@ -551,6 +551,11 @@ textarea {
 }
 .banner__bgd img {
   width: calc(100% + 120px)
+}
+@media screen and (min-width:575px) {
+  .banner__bgd img {
+    max-width: 500px
+  }
 }
 .banner__bgd_none {
   display: none
@@ -720,7 +725,7 @@ textarea {
     height: 380px
   }
 }
-@media screen and (min-width:1280px) {
+@media screen and (min-width:992px) {
   .banner {
     padding-top: 260px;
     padding-bottom: 200px
@@ -825,7 +830,7 @@ textarea {
 .footer__links .page__active {
   color: var(--blue)
 }
-@media screen and (min-width:1280px) {
+@media screen and (min-width:992px) {
   .footer {
     position: fixed;
     bottom: 0;
