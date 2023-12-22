@@ -583,7 +583,7 @@ select {
   @media screen and (min-width: 992px) {
     &{
       padding-top: 260px;
-      padding-bottom: 200px;
+      padding-bottom: 60px;
     }
 
     &__inner{
@@ -599,6 +599,17 @@ select {
       bottom: 0px;
       object-fit: contain;
       height: calc(100vh - 100px);
+      position: relative;
+      &::after{
+        content: '';
+        display: block;
+        width: 100%;
+        background: var(--white);
+        height: 85px;
+        position: absolute;
+        bottom: 0;
+        z-index: 5;
+      }
 
       img{
         width: 100%;
@@ -684,8 +695,6 @@ select {
 
   @media screen and (min-width: 992px) {
     &{
-      position: fixed;
-      bottom: 0;
       width: 100%;
       padding: 20px 0 15px;
     }
